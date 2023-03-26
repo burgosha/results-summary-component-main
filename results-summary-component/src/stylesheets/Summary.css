@@ -6,6 +6,7 @@
     --lighBlue: #CAC9FF;
     --darkNavy: #303B59;
     --reactionBg: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #FF5555;
+    --reactionText: #FF5555;
 }
 .main-container {
     width: 375px;
@@ -67,7 +68,8 @@
 .result-description {
     font-size: 16px;
     line-height: 21px;
-    width: 260px;
+    width: 100%;
+    max-width: 260px;
     color: var(--lighBlue);
 }
 .summary-container {
@@ -92,14 +94,99 @@
     gap: 16px;
 }
 .score-tag {
-    width: 315px;
+    width: 100%;
     height: 56px;
     border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 16px;
+    font-size: 16px;
+    font-weight: 500;
 }
 .reaction-tag {
     background: var(--reactionBg);
+}
+.reaction-text {
+    color: var(--reactionText);
+}
+.score-text {
+    display: flex;
+    align-items: center;
+}
+.score-icon {
+    margin-right: 12px;
+}
+.tag-score {
+    color: var(--darkNavy);
+    font-weight: 700;
+}
+.over-100 {
+    opacity: 0.5;
+}
+.continue-button {
+    width: 315px;
+    height: 56px;
+    border: none;
+    border-radius: 128px;
+    background-color: var(--darkNavy);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 23px;
+    color: var(--white);
+    cursor: pointer;
+}
+@media (min-width: 375px) {
+    .main-container {
+        width: 100%;
+        max-width: 736px;
+        height: 512px;
+        display: flex;
+        align-items: center;
+        background-color: var(--white);
+        border-radius: 32px;
+    }
+    .result-container {
+        width: 50%;
+        height: 512px;
+        border-radius: 32px;
+        padding: 38px 54px 46px 54px;
+    }
+    .result-title {
+        font-size: 24px;
+        font-weight: 700;
+        color: var(--lighBlue);
+        line-height: 31px;
+    }
+    .result-score-container {
+        width: 200px;
+        height: 200px;
+    }
+    .result-score {
+        font-size: 72px;
+    }
+    .of-100 {
+        font-size: 18px;
+        line-height: 23px;
+    }
+    .result-notes {
+        gap: 14px;
+    }
+    .result-note {
+        font-size: 32px;
+        line-height: 42px;
+    }
+    .result-description {
+        font-size: 18px;
+        line-height: 23px;
+    }
+    .summary-container {
+        height: 512px;
+        width: 50%;
+        padding: 38px 40px 46px 40px;
+    }
+    .summary-title {
+        font-size: 24px;
+        line-height: 31px;
+    }
 }

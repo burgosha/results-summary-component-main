@@ -18,42 +18,42 @@ function Summary() {
                 <div className="scores">
                     {/* Score */}
                     <div className="score-tag reaction-tag">
-                        <span className="reaction-text">
-                            <img className="reaction-icon" src={ReactionSvg} alt="reaction-icon" />
+                        <span className="reaction-text score-text">
+                            <img className="score-icon" src={ReactionSvg} alt="reaction-icon" />
                             Reaction
                         </span>
-                        <span className="reaction-score">
-                            <span className="reaction-score-num">80</span> / 100
+                        <span className="tag-score">
+                            <span className="tag-score-num">80</span> <span className="over-100">/ 100</span>
                         </span>
                     </div>
                     {/* Score */}
                     <div className="score-tag reaction-tag">
-                        <span className="reaction-text">
-                            <img className="reaction-icon" src={ReactionSvg} alt="reaction-icon" />
+                        <span className="reaction-text score-text">
+                            <img className="score-icon" src={ReactionSvg} alt="reaction-icon" />
                             Reaction
                         </span>
-                        <span className="reaction-score">
-                            <span className="reaction-score-num">80</span> / 100
+                        <span className="tag-score">
+                            <span className="tag-score-num">80</span> <span className="over-100">/ 100</span>
                         </span>
                     </div>
                     {/* Score */}
                     <div className="score-tag reaction-tag">
-                        <span className="reaction-text">
-                            <img className="reaction-icon" src={ReactionSvg} alt="reaction-icon" />
+                        <span className="reaction-text score-text">
+                            <img className="score-icon" src={ReactionSvg} alt="reaction-icon" />
                             Reaction
                         </span>
-                        <span className="reaction-score">
-                            <span className="reaction-score-num">80</span> / 100
+                        <span className="tag-score">
+                            <span className="tag-score-num">80</span> <span className="over-100">/ 100</span>
                         </span>
                     </div>
                     {/* Score */}
                     <div className="score-tag reaction-tag">
-                        <span className="reaction-text">
-                            <img className="reaction-icon" src={ReactionSvg} alt="reaction-icon" />
+                        <span className="reaction-text score-text">
+                            <img className="score-icon" src={ReactionSvg} alt="reaction-icon" />
                             Reaction
                         </span>
-                        <span className="reaction-score">
-                            <span className="reaction-score-num">80</span> / 100
+                        <span className="tag-score">
+                            <span className="tag-score-num">80</span> <span className="over-100">/ 100</span>
                         </span>
                     </div>    
                 </div>
