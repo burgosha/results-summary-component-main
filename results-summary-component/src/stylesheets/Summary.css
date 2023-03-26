@@ -1,0 +1,105 @@
+:root {
+    --gradient1: linear-gradient(180deg, #7755FF 0%, #6943FF 0.01%, #2F2CE9 100%);
+    --gradient2: linear-gradient(180deg, #4D21C9 0%, rgba(37, 33, 201, 0) 100%, rgba(37, 33, 201, 0) 100%);
+    --mainFont: 'Hanken Grotesk', sans-serif;
+    --white: #FFFFFF;
+    --lighBlue: #CAC9FF;
+    --darkNavy: #303B59;
+    --reactionBg: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #FF5555;
+}
+.main-container {
+    width: 375px;
+}
+
+.result-container {
+    width: 100%;
+    height: 356px;
+    background: var(--gradient1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 0 0 32px 32px;
+    padding: 2.5px 0 10px 0;
+    box-shadow: 0px 30px 60px rgba(61, 108, 236, 0.15);
+}
+.result-title {
+    font-weight: 700;
+    color: var(--lighBlue);
+    line-height: 23px;
+}
+.result-score-container {
+    width: 140px;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--gradient2);
+    border-radius: 50%;
+}
+.result-score {
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 72px;
+    color: var(--white);
+}
+.of-100 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: var(--lighBlue);
+    opacity: 0.52;
+}
+.result-notes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+.result-note {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    color: var(--white);
+}
+.result-description {
+    font-size: 16px;
+    line-height: 21px;
+    width: 260px;
+    color: var(--lighBlue);
+}
+.summary-container {
+    height: 453px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 32px;
+}
+.summary-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    color: var(--darkNavy);
+    text-align: left;
+}
+.scores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+.score-tag {
+    width: 315px;
+    height: 56px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+}
+.reaction-tag {
+    background: var(--reactionBg);
+}
