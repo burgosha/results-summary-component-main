@@ -1,13 +1,14 @@
 import React from "react";
 import "../stylesheets/Summary.css";
 import Score from "./Score.js";
+import FinalScore from "./FinalScore";
 import data from "../data/data.json";
 function Summary() {
     return(
         <div className="main-container">
             <div className="result-container">
                 <p className="result-title">Your Result</p>
-                <div className="result-score-container"><p className="result-score">76</p><p className="of-100">of 100</p></div>
+                <FinalScore data={data}/>
                 <div className="result-notes">
                     <p className="result-note">Great</p>
                     <p className="result-description">Your performance exceed 65% of the people conducting the test here!</p>
