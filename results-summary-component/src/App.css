@@ -21,7 +21,7 @@ p {
   justify-content: center;
   text-align: center;
 }
-@media (min-width: 375px) {
+@media (min-width: 572px) {
     html, body {
       background-color: #ECF2FF;
     }

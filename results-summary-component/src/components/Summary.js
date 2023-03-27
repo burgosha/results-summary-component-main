@@ -1,6 +1,7 @@
 import React from "react";
 import "../stylesheets/Summary.css";
-import ReactionSvg from "../images/icon-reaction.svg";
+import Score from "./Score.js";
+import data from "../data/data.json";
 function Summary() {
     return(
         <div className="main-container">
@@ -16,46 +17,10 @@ function Summary() {
                 <p className="summary-title">Summary</p>
                 {/* Scores */}
                 <div className="scores">
-                    {/* Score */}
-                    <div className="score-tag reaction-tag">
-                        <span className="reaction-text score-text">
-                            <img className="score-icon" src={ReactionSvg} alt="reaction-icon" />
-                            Reaction
-                        </span>
-                        <span className="tag-score">
-                            <span className="tag-score-num">80</span> <span className="over-100">/ 100</span>
-                        </span>
-                    </div>
-                    {/* Score */}
-                    <div className="score-tag reaction-tag">
-                        <span className="reaction-text score-text">
-                            <img className="score-icon" src={ReactionSvg} alt="reaction-icon" />
-                            Reaction
-                        </span>
-                        <span className="tag-score">
-                            <span className="tag-score-num">80</span> <span className="over-100">/ 100</span>
-                        </span>
-                    </div>
-                    {/* Score */}
-                    <div className="score-tag reaction-tag">
-                        <span className="reaction-text score-text">
-                            <img className="score-icon" src={ReactionSvg} alt="reaction-icon" />
-                            Reaction
-                        </span>
-                        <span className="tag-score">
-                            <span className="tag-score-num">80</span> <span className="over-100">/ 100</span>
-                        </span>
-                    </div>
-                    {/* Score */}
-                    <div className="score-tag reaction-tag">
-                        <span className="reaction-text score-text">
-                            <img className="score-icon" src={ReactionSvg} alt="reaction-icon" />
-                            Reaction
-                        </span>
-                        <span className="tag-score">
-                            <span className="tag-score-num">80</span> <span className="over-100">/ 100</span>
-                        </span>
-                    </div>    
+                    {data.map((data) => {
+                        return <Score category={data.category} score={data.score} icon={data.icon} />;
+                    })
+                    }
                 </div>
                 {/* Continue Button */}
                 <button className="continue-button">Continue</button>

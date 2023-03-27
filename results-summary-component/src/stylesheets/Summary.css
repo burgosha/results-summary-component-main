@@ -7,6 +7,12 @@
     --darkNavy: #303B59;
     --reactionBg: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #FF5555;
     --reactionText: #FF5555;
+    --memoryBg: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #FFB21E;
+    --memoryText: #FFB21E;
+    --verbalBg: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #00BB8F;
+    --verbalText: #00BB8F;
+    --visualBg: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #1125D6;
+    --visualText: #1125D6;
 }
 .main-container {
     width: 375px;
@@ -110,6 +116,24 @@
 .reaction-text {
     color: var(--reactionText);
 }
+.memory-tag {
+    background: var(--memoryBg);
+}
+.memory-text {
+    color: var(--memoryText);
+}
+.verbal-tag {
+    background: var(--verbalBg);
+}
+.verbal-text {
+    color: var(--verbalText);
+}
+.visual-tag {
+    background: var(--visualBg);
+}
+.visual-text {
+    color: var(--visualText);
+}
 .score-text {
     display: flex;
     align-items: center;
@@ -136,7 +160,10 @@
     color: var(--white);
     cursor: pointer;
 }
-@media (min-width: 375px) {
+.continue-button:hover {
+    background: var(--gradient1);
+}
+@media (min-width: 572px) {
     .main-container {
         width: 100%;
         max-width: 736px;
@@ -184,9 +211,14 @@
         height: 512px;
         width: 50%;
         padding: 38px 40px 46px 40px;
+        justify-content: space-between;
     }
     .summary-title {
         font-size: 24px;
         line-height: 31px;
+    }
+    .continue-button {
+        width: 100%;
+        max-width: 288px;
     }
 }
