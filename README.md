@@ -70,7 +70,13 @@ One of the first problems was the import of the svg files, from the addresses pr
   }
 ]
 ```
-To accomplish this I used the require() method in the Score component and positioned the SVGs in the public folder.
+To accomplish this I used the map() method with the Score component and positioned the SVGs in the public folder.
+```js
+  {data.map((data) => {
+    return <Score category={data.category} score={data.score} icon={data.icon} />;
+    })
+  }
+```
 ```js
     <img className="score-icon" src={props.icon} alt={`${props.category.toLowerCase()}-icon`}/>
 ```
