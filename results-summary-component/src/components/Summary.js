@@ -11,7 +11,7 @@ function Summary() {
                 <FinalScore data={data}/>
                 <div className="result-notes">
                     <p className="result-note">Great</p>
-                    <p className="result-description">Your performance exceed 65% of the people conducting the test here!</p>
+                    <p className="result-description">Your performance exceed {65}% of the people conducting the test here!</p>
                 </div>
             </div>
             <div className="summary-container">

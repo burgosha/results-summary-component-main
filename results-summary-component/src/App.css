@@ -21,6 +21,10 @@ p {
   justify-content: center;
   text-align: center;
 }
+.attribution {
+  font-size: 14px;
+  margin-top: 40px;
+}
 @media (min-width: 572px) {
     html, body {
       background-color: #ECF2FF;
