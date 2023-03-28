@@ -70,6 +70,11 @@ One of the first problems was the import of the svg files, from the addresses pr
   }
 ]
 ```
+To accomplish this I used the require() method in the Score component and positioned the SVGs in the public folder.
+```js
+    <img className="score-icon" src={props.icon} alt={`${props.category.toLowerCase()}-icon`}/>
+```
+
 To see how you can add code snippets, see below:
 
 ```html
